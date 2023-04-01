@@ -42,3 +42,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Troubleshooting
+
+. [Object is of type 'unknown' typescript generics](https://stackoverflow.com/a/69028217/6771132)
