@@ -3,6 +3,6 @@ export const apiEndpoint =
 
 export const authConfig = {
   domain: "dev-gi7tpkcun11ksfq7.us.auth0.com",
-  clientId: "CRnaTvJUoVSlDwWnyVWQcEQvMPP2jFpc",
+  clientId: "W1rZDhXIunRg9aMOnXszk1enXIH1JmV5",
   callbackUrl: "http://localhost:3000/callback",
 };
