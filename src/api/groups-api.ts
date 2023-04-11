@@ -5,7 +5,11 @@ import { GroupUploadInfo } from "../types/GroupUploadInfo";
 export async function getGroups(): Promise<GroupModel[]> {
   console.log("Fetching groups");
 
-  const response = await fetch(`${apiEndpoint}/groups`);
+  const response = await fetch(`${apiEndpoint}/groups`, {
+    headers: {
+      "Access-Control-Request-Headers": "*",
+    },
+  });
   const result = await response.json();
 
   return result.items;
@@ -20,7 +24,6 @@ export async function createGroup(
     method: "POST",
     headers: {
       "Access-Control-Request-Headers": "*",
-      "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
       Authorization: `Bearer ${idToken}`,
     },
